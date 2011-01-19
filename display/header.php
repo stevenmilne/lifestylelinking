@@ -17,7 +17,12 @@
  * 
  */
  // LLbox
+
+
+// actually just displays the front page of the site
+// rather locate in standalone page
 function llheader ()
+
 {
  ?>
 <!DOCTYPE html>
@@ -29,57 +34,41 @@ function llheader ()
 <link rel="stylesheet" href="display/css/main.css" type="text/css" />
 
 <!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lte IE 7]>
-	<script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+<script src="js/IE8.js" type="text/javascript"></script><![endif]-->
 <!--[if lt IE 7]>
 
-	<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 </head>
 
 <body id="index" class="home">
 
-
-<header id="accountnav" class="body">
+	<header id="accountnav">
+		<nav>
+			<ul>
+				<li class="active"><a href="#">login</a></li>
+			</ul>
+		</nav>
+	</header>
 	
-  	<nav><ul>
-		<li class="active"><a href="#">login</a></li>
-	   </ul></nav>
-  
-  </header><!-- /#banner -->
-
-
-<section id="llbox" class="body">
-
-<img src="display/images/mepath.png"><br><br>
-
-Enter something about your lifestyle: words, a blog or website
-<form>
-  <input name="q" type="search"  >
-  <br>
-    <input type="submit" value="Start lifestylelinking">
-</form>
-
-</section><!-- /#content -->
-
-
-
-
-<footer id="contentinfo" class="body">
-	<p>2005-2010 <a href="">lifestylelinking - open source project</a>.</p>
-</footer><!-- /#contentinfo -->
-
-
-
-
-
+	
+	<section id="llbox">
+		<p>Enter something like skiing / coding / java / coffee</p>
+		<form>
+			<input name="q" type="search"  > 
+			<input type="submit" value="Start lifestylelinking">
+		</form>
+	</section>
+	 
+	<footer id="contentinfo" class="body">
+		<p>#footermessage</p>
+	</footer> 
+	
 </body>
-</html>
-
-
-
+</html> 
 <?php
-}  // closes function
+}  // closes llheader
 
 
 
@@ -108,16 +97,16 @@ function displayheader5 ()
 
 <body id="index" class="home">
 
-<header id="accountnav" class="body">
-	
-  	<nav><ul>
-		<li class="active"><a href="#">login</a></li>
-	   </ul></nav>
-  
-  </header><!-- /#banner -->
+<header id="accountnav" >
+	<nav>
+		<ul>
+			<li class="active"><a href="#">login</a></li>
+		</ul>
+	</nav>
+</header> 
 
 
-<header id="banner" class="body">
+<header id="topiccontext" >
 
    <nav><ul>
 		<li class="active"><a href="#">me</a></li>
