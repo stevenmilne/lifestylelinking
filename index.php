@@ -16,7 +16,7 @@
  *
  * 
  */
-include_once ('opensource/lifestylelinking/display/header.php');
+include_once ('/display/header.php');
 // stitch together header and content.
 
 $jam = $_GET['q'];
